@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Finance Mentor</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <!-- LEFT SIDEBAR: DASHBOARD -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i class="fa-solid fa-robot fa-bounce" style="color: #6c5ce7;"></i>
+                <h2>Finance Mentor</h2>
+            </div>
+
+            <!-- Total Balance Card -->
+            <div class="balance-card">
+                <span class="label">Total Balance</span>
+                <h1 id="balance-display">₹ 0</h1>
+            </div>
+
+            <!-- Income vs Expense Row -->
+            <div class="stats-grid">
+                <div class="stat-box income">
+                    <div class="icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <div>
+                        <span>Income</span>
+                        <h4 id="income-display">₹ 0</h4>
+                    </div>
+                </div>
+                <div class="stat-box expense">
+                    <div class="icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+                    <div>
+                        <span>Expense</span>
+                        <h4 id="expense-display">₹ 0</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chart Area -->
+            <div class="chart-wrapper">
+                <canvas id="expenseChart"></canvas>
+            </div>
+
+            <!-- Recent Transactions List -->
+            <div class="ledger-section">
+                <h3>Recent History</h3>
+                <ul id="transaction-list">
+                    <!-- JavaScript will inject items here -->
+                    <li class="empty-state">No transactions yet.</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- RIGHT MAIN: CHAT INTERFACE -->
+        <main class="chat-area">
+            
+            <!-- Header -->
+            <header class="chat-header">
+                <div class="chat-title">
+                    <h3>AI Assistant</h3>
+                    <span class="status-dot"></span>
+                    <span class="status-text">Online</span>
+                </div>
+            </header>
+
+            <!-- Messages Area -->
+            <div class="chat-window" id="chat-window">
+                <div class="message bot">
+                    <div class="msg-content">
+                        Hello! I am your AI Finance Mentor. 🤖<br>
+                        Tell me about your spending or income.<br>
+                        <br>
+                        <i>Ex: "Paid 250 for coffee" or "Received 5000 bonus"</i>
+                    </div>
+                    <div class="msg-time">Just now</div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="user-input" placeholder="Type a transaction..." autocomplete="off">
+                    <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FIREBASE & LOGIC -->
+    <script type="module" src="/static/js/firebase_init.js"></script>
+    <script type="module" src="/static/js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+*.h5
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Jupyter / temp
+.ipynb_checkpoints/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Environment & Secrets
+# ---------------------------
+.env
+*.env
+serviceAccountKey.json
+firebase_key.json
+credentials.json
+
+# ---------------------------
+# Node / Static assets (if used)
+# ---------------------------
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+
+# ---------------------------
+# Your project-specific ignores
+# ---------------------------
+
+# Data files
+data/*.csv
+data/*.json
+data/*.db
+
+# ML model artifacts
+models/*.bin
+models/*.pt
+models/*.onnx
+models/*.model
+models/checkpoints/
+
+# Cached embeddings
+models/nlp/embeddings_cache/
+embeddings_cache/
+
+# Static generated content
+static/charts/generated/
+static/assets/uploads/
