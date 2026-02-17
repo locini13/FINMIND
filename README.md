@@ -30,6 +30,11 @@ FINMIND is an AI-powered personal finance assistant that helps you effortlessly 
 - **Reset Data Command**  
   Clear budgets, transactions, and alerts with a simple “Reset everything” command.
 
+---
+
+Project structure
+
+'''
 
   FINMIND/
 ├── data/
@@ -59,7 +64,7 @@ FINMIND is an AI-powered personal finance assistant that helps you effortlessly 
 ├── README.md
 ├── requirements.txt
 └── serviceAccountKey.json
-
+'''
 
 Usage
 
@@ -67,7 +72,7 @@ Set budgets via the landing page or skip to chat directly.
 Log expenses by typing natural sentences (e.g., “Starbucks 300”).
 Ask for summaries, heatmaps, or reset your data anytime.
 Receive intelligent alerts to stay on track
----
+
 
 
 
