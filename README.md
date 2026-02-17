@@ -34,7 +34,7 @@ FINMIND is an AI-powered personal finance assistant that helps you effortlessly 
 
 Project structure
 
-'''
+```
 
   FINMIND/
 ├── data/
@@ -64,7 +64,7 @@ Project structure
 ├── README.md
 ├── requirements.txt
 └── serviceAccountKey.json
-'''
+
 
 Usage
 
@@ -73,6 +73,7 @@ Log expenses by typing natural sentences (e.g., “Starbucks 300”).
 Ask for summaries, heatmaps, or reset your data anytime.
 Receive intelligent alerts to stay on track
 
+```
 
 
 
