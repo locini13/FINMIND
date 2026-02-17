@@ -30,32 +30,28 @@ FINMIND is an AI-powered personal finance assistant that helps you effortlessly 
 - **Reset Data Command**  
   Clear budgets, transactions, and alerts with a simple “Reset everything” command.
 
----
 
-## Project Structure
-
-'''
-FINMIND/
+  FINMIND/
 ├── data/
-│ ├── corrected_expenses.csv
-│ └── transaction.csv
+│   ├── corrected_expenses.csv
+│   └── transaction.csv
 ├── models/
-│ ├── category_classifier.pkl
-│ └── type_classifier.pkl
+│   ├── category_classifier.pkl
+│   └── type_classifier.pkl
 ├── nlp/
-│ ├── auto_correction.py
-│ ├── categorizer.py
-│ ├── category_mapping.py
-│ ├── parser.py
-│ ├── spend_anomaly.py
-│ ├── spending_analytics.py
-│ └── train_models.py
+│   ├── auto_correction.py
+│   ├── categorizer.py
+│   ├── category_mapping.py
+│   ├── parser.py
+│   ├── spend_anomaly.py
+│   ├── spending_analytics.py
+│   └── train_models.py
 ├── routes/
-│ ├── api_routes.py
-│ └── graphql_routes.py
+│   ├── api_routes.py
+│   └── graphql_routes.py
 ├── static/
 ├── templates/
-│ └── index.html
+│   └── index.html
 ├── venv/
 ├── .env
 ├── .gitignore
@@ -64,7 +60,6 @@ FINMIND/
 ├── requirements.txt
 └── serviceAccountKey.json
 
-'''
 
 Usage
 
@@ -72,3 +67,7 @@ Set budgets via the landing page or skip to chat directly.
 Log expenses by typing natural sentences (e.g., “Starbucks 300”).
 Ask for summaries, heatmaps, or reset your data anytime.
 Receive intelligent alerts to stay on track
+---
+
+
+
